@@ -4,7 +4,7 @@ import { useStep } from '../../context/StepContext'
 const NavLink = ({ label, index }) => {
   const { currentStep } = useStep()
   return (
-    <li className={`${currentStep == index ? "" : ""}`}>{label}</li>
+    <li className={`${currentStep === index ? "" : ""}`}>{label}</li>
   )
 }
 
@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className='nav-container'>
       <ul className='ps-0 d-flex justify-content-between'>
         {
-          labels.map((label, index) => <NavLink label={label} index={index} />)
+          labels.map((label, index) => <NavLink key={index} label={label} index={index} />)
         }
       </ul>
     </nav>
