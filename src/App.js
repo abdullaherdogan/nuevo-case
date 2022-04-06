@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="container d-flex flex-column justify-content-center align-items-center">
       <span className='top-circle'></span>
+      <img src='assets/images/logo.png' alt='logo' className='logo' />
       <StepProvider>
         <Layout/>
       </StepProvider>

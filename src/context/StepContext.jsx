@@ -13,7 +13,8 @@ export const StepProvider = ({ children }) => {
   }
   const values = {
     step,
-    nextStep
+    nextStep,
+    currentStep
   }
   return <StepContext.Provider value={values}>{children}</StepContext.Provider>
 }
