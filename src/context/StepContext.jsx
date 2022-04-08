@@ -19,15 +19,18 @@ export const StepProvider = ({ children }) => {
     setSelectedCar(prev => ({
       ...prev, car: { ...prev.car, photo: `assets/images/car-${prev.car.model === 'Ibiza' ? "1" : "2"}-${color}.png` }, color: color
     }))
-    console.log(selectedCar)
   }
 
   const setCar = (key, value) => {
     setSelectedCar(prev => ({ ...prev, [key]: value }))
   }
+
   const nextStep = () => {
+    if (currentStep === 3) return
+
     setCurrentStep(currentStep + 1)
   }
+
   const values = {
     nextStep,
     currentStep,
@@ -35,6 +38,7 @@ export const StepProvider = ({ children }) => {
     setCar,
     setColor
   }
+
   return <StepContext.Provider value={values}>{children}</StepContext.Provider>
 }
 

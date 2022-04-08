@@ -26,7 +26,7 @@ const Summary = () => {
           <div className="car-options-title">
             Accessories
           </div>
-          <div className="car-options-text">{selectedCar.accessories.map((item) => item.name).join(" + ")}</div>
+          <div className="car-options-text w-100">{selectedCar.accessories.length > 0 ? selectedCar.accessories.map((item) => item.name).join(" + ") : "No Accessory"}</div>
         </div>
       </div>
     </div>
