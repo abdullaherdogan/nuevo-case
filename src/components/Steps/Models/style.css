@@ -156,3 +156,32 @@
 .select-button.active {
   opacity: 1;
 }
+
+@media only screen and (max-width: 600px) {
+  .model-area {
+    padding: 50px;
+    margin-top: 61px;
+    margin-bottom: 40px;
+    width: 255px;
+    height: 255px;
+  }
+
+  .model-area-img {
+    height: 100px;
+  }
+
+  .back-text {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -3.48px;
+  }
+
+  .select-button {
+    border-radius: 10.5px;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 1.5px;
+    padding: 5px 8px;
+  }
+}

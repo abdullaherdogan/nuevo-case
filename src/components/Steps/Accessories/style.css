@@ -2,13 +2,37 @@
   margin-top: 88px;
   height: 80vh;
   overflow: scroll;
+  overflow-x: hidden;
+}
+
+.accessories-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.accessories-container::-webkit-scrollbar-track {
+  background: #D8D8D8;
+}
+
+.accessories-container::-webkit-scrollbar-thumb {
+  width: 5px;
+  height: 5% !important;
+  background: #575757;
+  border-radius: 10px;
 }
 
 .accessories-text {
   margin-bottom: 34px;
+  font-family: 'Qanelas';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #1C1C1C;
 }
 
 .accessory-box {
+  cursor: pointer;
   border: 1px solid #a4a4a416;
   border-radius: 11px;
   color: #0F0F0F;
@@ -19,6 +43,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  transition: all ease .8s;
+}
+
+.accessory-box:hover {
+  background-color: #0f0f0f0f;
 }
 
 .accessory-box .accessory-name,

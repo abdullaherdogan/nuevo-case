@@ -67,3 +67,39 @@ input[class="radio-black"] {
 input[class="radio-grey"] {
   background-color: #c8c8c8;
 }
+
+@media only screen and (max-width: 785px) {
+  .car-name {
+    font-weight: 800;
+    font-size: 220px;
+    text-align: center;
+    letter-spacing: -12.2px;
+    bottom: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .colors-container {
+    margin-top: 100px;
+  }
+
+  .car-img {
+    height: 170px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .car-name {
+    font-size: 170px;
+    letter-spacing: -8.2px;
+    bottom: 50%;
+  }
+
+  .colors-container {
+    margin-top: 80px;
+  }
+
+  .car-img {
+    height: 150px;
+  }
+}

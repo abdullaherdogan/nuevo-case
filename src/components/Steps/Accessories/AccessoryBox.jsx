@@ -2,7 +2,14 @@ import React from 'react'
 
 const AccessoryBox = ({ accessory, index, setAccessoryList }) => {
   const handleClick = () => {
-    setAccessoryList(prev => ([...prev, { ...prev[index], isActive: !prev[index].isActive }]).filter(item => item != prev[index]))
+    setAccessoryList(prev => (prev.map((item, i) => {
+      if (i === index) {
+        item.isActive = !item.isActive
+        return item
+      } else {
+        return item
+      }
+    })))
   }
   return (
     <div onClick={handleClick} className={`col-md-4 accessory-box ${accessory.isActive ? "active" : ""}`}>

@@ -1,0 +1,42 @@
+.accessories-section {
+  align-items: center;
+}
+
+.car-options-container {
+  height: 304px;
+}
+
+
+.car-options {
+  margin: 16px 0;
+}
+
+hr {
+  width: 100% !important;
+  mix-blend-mode: normal;
+  opacity: 0.09;
+  border: 1px solid #979797;
+}
+
+.car-options-title {
+  font-family: 'Qanelas';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.992366px;
+  text-transform: uppercase;
+  color: #0F0F0F;
+  margin-bottom: 18px;
+}
+
+.car-options-text {
+  font-family: 'Qanelas';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1C1C1C;
+  mix-blend-mode: normal;
+  opacity: 0.38;
+}

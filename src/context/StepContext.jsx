@@ -16,7 +16,10 @@ export const StepProvider = ({ children }) => {
   })
 
   const setColor = (color) => {
-    setSelectedCar(prev => ({ ...prev, car: { ...prev.car, photo: `assets/images/car-${prev.car.model === 'Ibiza' ? "1" : "2"}-${color}.png` } }))
+    setSelectedCar(prev => ({
+      ...prev, car: { ...prev.car, photo: `assets/images/car-${prev.car.model === 'Ibiza' ? "1" : "2"}-${color}.png` }, color: color
+    }))
+    console.log(selectedCar)
   }
 
   const setCar = (key, value) => {

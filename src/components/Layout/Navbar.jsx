@@ -15,7 +15,7 @@ const Navbar = () => {
   const labels = ['Models', 'Colors', 'Accessories', 'Summary']
   return (
     <nav className='nav-container'>
-      <ul className='ps-0 d-flex justify-content-between'>
+      <ul className='ps-0 d-flex'>
         {
           labels.map((label, index) => <NavLink key={index} label={label} index={index} />)
         }
