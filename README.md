@@ -1,5 +1,5 @@
 ## Case
-> [Live Preview](https://resplendent-moxie-108eec.netlify.app)
+> [Live Preview](https://master--resplendent-moxie-108eec.netlify.app)
 ## Available Scripts
 
 In the project directory, you can run:
