@@ -83,6 +83,12 @@ input[class="radio-grey"] {
     margin-top: 100px;
   }
 
+  .car-name {
+    font-size: 150px;
+    letter-spacing: -8.2px;
+    bottom: 60%;
+  }
+
   .car-img {
     height: 170px;
   }
@@ -90,9 +96,9 @@ input[class="radio-grey"] {
 
 @media only screen and (max-width: 400px) {
   .car-name {
-    font-size: 170px;
+    font-size: 110px;
     letter-spacing: -8.2px;
-    bottom: 50%;
+    bottom: 60%;
   }
 
   .colors-container {
@@ -100,6 +106,6 @@ input[class="radio-grey"] {
   }
 
   .car-img {
-    height: 150px;
+    height: 120px;
   }
 }

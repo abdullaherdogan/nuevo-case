@@ -5,13 +5,13 @@ const Summary = () => {
   const { selectedCar } = useStep()
   return (
     <div className='row d-flex accessories-section justify-content-between'>
-      <div className="col-lg-7 d-flex align-items-center">
+      <div className="col-sm-12 col-lg-7 d-flex justify-content-center align-items-center">
         <div className="model-area">
           <div className="back-text" >{selectedCar.car.model}</div>
           <img className="model-area-img" src={selectedCar.car.photo} alt="Car" />
         </div>
       </div>
-      <div className="col-lg-5 car-options-container d-flex flex-column justify-content-center">
+      <div className="col-sm-12 col-lg-5 car-options-container d-flex flex-column justify-content-center">
         <div className="car-options">
           <div className='car-options-title'>Model</div>
           <div className='car-options-text'>{selectedCar.car.desc}</div>

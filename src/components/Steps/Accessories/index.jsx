@@ -44,8 +44,8 @@ const Accessories = () => {
 
   return (
     <div className='row accessories-container justify-content-center'>
-      <div className="col-md-12 text-center accessories-text">
-        Seçtiğin araca ait özellikler, konforun ve yaşam stilini belirler.
+      <div className="col-md-12 d-flex justify-content-center">
+        <p className='accessories-text text-center'>Seçtiğin araca ait özellikler, konforun ve yaşam stilini belirler.</p>
       </div>
       {
         accessoryList.map((accessory, index) => (
