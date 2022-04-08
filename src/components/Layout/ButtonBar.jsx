@@ -1,10 +1,23 @@
-import React from 'react'
-import { useStep } from '../../context/StepContext'
+import React from "react"
+import { useStep } from "../../context/StepContext"
 
 const ButtonBar = () => {
-  const { nextStep } = useStep()
+  const { nextStep, currentStep, selectedCar } = useStep()
+  const buttonBarTexts = [
+    'Colors',
+    'Accessories',
+    'Summary',
+    'Buy Now'
+  ]
   return (
-    <div><div className="btn btn-outline-primary" onClick={nextStep}>Next</div></div>
+    <div className="button-bar w-75 d-flex align-items-center">
+      <img className="button-bar-img" src={selectedCar.car.photo} alt="Car" />
+      <div className="button-bar-text">
+        <div>TOTAL</div>
+        <div className="second-text">{selectedCar.car.price} TL</div>
+      </div>
+      <button onClick={nextStep}>{buttonBarTexts[currentStep]}</button>
+    </div>
   )
 }
 

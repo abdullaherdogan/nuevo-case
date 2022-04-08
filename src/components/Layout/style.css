@@ -2,3 +2,71 @@
   width: 466px;
   height: 33px;
 }
+
+ul li {
+  cursor: pointer;
+  font-family: Qanelas;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.992366px;
+  color: #0F0F0F;
+}
+
+ul li.passive {
+  opacity: 0.19;
+}
+
+
+hr {
+  width: 14px;
+  height: 4px !important;
+  color: #0F0F0F;
+  margin: 14px auto 0 auto;
+}
+
+.button-bar {
+  height: 95px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 70px rgba(0, 0, 0, 0.0703671);
+  border-radius: 11px;
+  overflow: hidden;
+  margin-bottom: 71px;
+}
+
+.button-bar button {
+  height: 100%;
+  width: 25%;
+  border: none;
+  background-color: #181818;
+  color: #FFFFFF;
+  font-family: 'Qanelas';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2.78571px;
+}
+
+.button-bar-img {
+  height: 50px;
+  transform: scaleX(-1);
+}
+
+.button-bar-text {
+  flex: 1;
+  margin-left: 8%;
+  font-family: Qanelas;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.button-bar-text .second-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1C1C1C;
+}

@@ -1,0 +1,68 @@
+.accessories-container {
+  margin-top: 88px;
+  height: 80vh;
+  overflow: scroll;
+}
+
+.accessories-text {
+  margin-bottom: 34px;
+}
+
+.accessory-box {
+  border: 1px solid #a4a4a416;
+  border-radius: 11px;
+  color: #0F0F0F;
+  margin: 10px;
+  height: 283px;
+  width: 283px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.accessory-box .accessory-name,
+.accessory-box .price-area .price {
+  font-family: 'Qanelas';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.992366px;
+  text-transform: uppercase;
+}
+
+.accessory-box.active {
+  background: #292929;
+  color: #ffff;
+}
+
+.accessory-name {
+  width: 75%;
+  text-align: center;
+}
+
+.price-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-icon-accessory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  margin-top: 26px;
+  width: 33px;
+  height: 33px;
+  background-color: #000000;
+  align-content: center;
+  border-radius: 50%;
+}
+
+.select-icon-accessory.active {
+  animation: shake 0.8s;
+  opacity: 1;
+}

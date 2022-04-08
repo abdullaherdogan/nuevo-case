@@ -1,0 +1,69 @@
+.colors-container {
+  margin-top: 150px;
+}
+
+.car-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-name {
+  position: absolute;
+  font-family: 'Qanelas';
+  line-height: initial;
+  z-index: -1;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 347.4px;
+  text-align: center;
+  letter-spacing: -16.2px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.09;
+  text-transform: uppercase;
+  bottom: 30%;
+}
+
+.color-text {
+  bottom: 100%;
+}
+
+.car-img {
+  margin-bottom: 30px;
+}
+
+.radio-buttons-group {
+  margin-bottom: 115px;
+}
+
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+
+input[type="radio"]:hover {
+  border: 1px solid #5e5c5c;
+}
+
+input[type="radio"]:checked {
+  border: 1px solid #5e5c5c;
+}
+
+input[class="radio-red"] {
+  background-color: #b40f14;
+}
+
+input[class="radio-black"] {
+  background-color: #1c1c1c;
+}
+
+input[class="radio-grey"] {
+  background-color: #c8c8c8;
+}

@@ -4,7 +4,10 @@ import { useStep } from '../../context/StepContext'
 const NavLink = ({ label, index }) => {
   const { currentStep } = useStep()
   return (
-    <li className={`${currentStep === index ? "" : ""}`}>{label}</li>
+    <li className={currentStep !== index ? "passive" : ""}>
+      {label}
+      {currentStep === index ? <hr /> : null}
+    </li>
   )
 }
 

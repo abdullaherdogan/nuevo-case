@@ -1,0 +1,158 @@
+@keyframes shake {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(0.9);
+  }
+
+  70% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.model-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  margin-top: 91px;
+  margin-bottom: 50px;
+  mix-blend-mode: normal;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  width: 507px;
+  height: 507px;
+  transition: all ease .8s;
+}
+
+.model-area:hover {
+  border: 1px solid rgba(0, 0, 0, .06);
+}
+
+.model-area.active {
+  border: 1px solid rgba(0, 0, 0, .06);
+}
+
+.select-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2%;
+  opacity: 0;
+  right: 26%;
+  width: 33px;
+  height: 33px;
+  background-color: #000000;
+  align-content: center;
+  border-radius: 50%;
+}
+
+.select-icon.active {
+  animation: shake 0.8s;
+  opacity: 1;
+}
+
+.model-area-img {
+  opacity: 0.2;
+  transition: all ease .8s;
+}
+
+.model-area:hover .model-area-img {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.model-area-img.active {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.back-text {
+  position: absolute;
+  opacity: 0;
+  top: 10%;
+  text-transform: uppercase;
+  font-family: 'Qanelas';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 138.96px;
+  line-height: 174px;
+  text-align: center;
+  letter-spacing: -6.48px;
+  color: #000000;
+  mix-blend-mode: normal;
+  z-index: -1;
+  transition: all ease .8s;
+}
+
+.model-area:hover .back-text {
+  opacity: 0.09;
+}
+
+.back-text.active {
+  opacity: 0.09;
+}
+
+.model-area p {
+  width: 140px;
+  opacity: 0;
+  font-family: 'Qanelas';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  margin-top: 18px;
+  transition: all ease .8s;
+}
+
+.model-area:hover p {
+  opacity: 1;
+}
+
+.model-area p.active {
+  opacity: 1;
+}
+
+.model-area p span {
+  font-family: 'Qanelas';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.select-button {
+  border: none;
+  opacity: 0;
+  color: #ffff;
+  background: #181818;
+  border-radius: 15.5px;
+  font-family: 'Qanelas';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  padding: 10px 16px;
+  transition: all ease .8s;
+}
+
+.model-area:hover .select-button {
+  opacity: 1;
+}
+
+.select-button.active {
+  opacity: 1;
+}
